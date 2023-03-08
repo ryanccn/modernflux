@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "modernflux",
+  "description": "A modern look and feel for Miniflux",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sass src/:dist/ --no-source-map --watch",
+    "build": "sass src/:dist/ --no-source-map"
+  },
+  "author": "Ryan Cao",
+  "license": "MIT",
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.58.3"
+  }
+}

@@ -1,0 +1,51 @@
+input[type='search'],
+input[type='url'],
+input[type='password'],
+input[type='text'],
+input[type='number'],
+textarea {
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.35rem;
+}
+
+select {
+  background-color: $surface0;
+  color: $text;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.35rem;
+  border: none;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+
+  &:has(input) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.35rem;
+
+    margin-bottom: 1rem;
+  }
+
+  & input[type='checkbox'] {
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  border: none;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+
+  &.button-primary {
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: var(--button-primary-background);
+    }
+  }
+}

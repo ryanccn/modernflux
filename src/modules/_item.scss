@@ -1,0 +1,26 @@
+.item {
+  padding: 0.75rem;
+  border-radius: 0.35rem;
+  border: 1px solid $surface0;
+}
+.item:hover {
+  border-color: $surface1;
+}
+
+.item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.item-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.item-meta-info {
+  color: $subtext1;
+}

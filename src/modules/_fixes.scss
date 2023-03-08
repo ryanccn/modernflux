@@ -1,0 +1,42 @@
+/* Image aspect ratios */
+.entry-content img {
+  height: auto;
+}
+
+.entry-meta,
+.entry-date {
+  color: $subtext0;
+}
+
+/* Link colors */
+.item-meta a,
+.entry-website a,
+.header li a {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+/* Alerts top margin */
+.alert {
+  margin-top: 20px;
+}
+
+/* Focus styles */
+a:focus,
+button:focus,
+input:focus,
+input[type='search']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='text']:focus,
+input[type='number']:focus,
+select:focus,
+textarea:focus {
+  outline-color: $teal;
+  outline-style: solid;
+  outline-offset: 2px;
+  outline-width: 2px;
+}

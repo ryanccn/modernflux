@@ -1,0 +1,22 @@
+a {
+  text-underline-offset: 2px;
+
+  &:has(svg) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.25rem;
+  }
+}
+
+.pagination {
+  justify-content: space-between;
+}
+
+.pagination-prev,
+.pagination-next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.35rem;
+}

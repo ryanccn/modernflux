@@ -1,0 +1,22 @@
+.entry-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+}
+
+.entry-content img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.entry header h1 a:hover,
+.entry header h1 a:focus {
+  color: $subtext1;
+}
