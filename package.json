@@ -12,5 +12,5 @@
   "dependencies": {
     "sass": "^1.62.1"
   },
-  "packageManager": "pnpm@8.6.3"
+  "packageManager": "pnpm@8.6.5"
 }
