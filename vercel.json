@@ -1,3 +1,11 @@
 {
-  "github": { "silent": true }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "github": { "silent": true },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/ryanccn/modernflux",
+      "permanent": false
+    }
+  ]
 }
