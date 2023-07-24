@@ -70,6 +70,11 @@ section.page-footer {
   flex-direction: column;
   gap: 0.875rem;
 
+  & h1 a:hover,
+  & h1 a:focus {
+    color: lighten($text, 2.5%);
+  }
+
   & > ul {
     display: flex;
     flex-direction: column;
