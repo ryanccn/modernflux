@@ -1,6 +1,10 @@
 a {
   text-underline-offset: 2px;
 
+  transition-property: color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+
   &:has(svg) {
     display: flex;
     flex-direction: row;
