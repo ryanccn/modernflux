@@ -13,7 +13,7 @@
 
   ul {
     display: none;
-    &[style*='display: block;'] {
+    &[style*="display: block;"] {
       display: flex !important;
     }
 
@@ -62,8 +62,8 @@ section.page-header {
 
   & > ul {
     display: flex;
-
     flex-direction: column;
+
     @media (min-width: 600px) {
       flex-direction: row;
       align-items: center;
@@ -71,6 +71,27 @@ section.page-header {
     }
 
     gap: 0.5rem;
+
+    & > li {
+      padding-right: 0;
+    }
+
+    & > li > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+
+      text-decoration: none;
+      padding: 0.1rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: $surface0;
+
+      & > .icon {
+        padding-bottom: 0;
+      }
+    }
   }
 }
 
