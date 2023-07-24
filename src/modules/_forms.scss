@@ -51,5 +51,12 @@ label {
       border: none;
       background-color: var(--button-primary-background);
     }
+
+    &:disabled {
+      color: var(--button-primary-color);
+      border-color: var(--button-primary-focus-border-color);
+      background-color: var(--button-primary-focus-background);
+      opacity: 0.75;
+    }
   }
 }
