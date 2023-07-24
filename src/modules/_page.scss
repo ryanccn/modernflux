@@ -1,9 +1,9 @@
 html {
-  color-scheme: dark light;
   accent-color: $teal;
 }
 
 body {
+  color-scheme: $color-scheme;
   overflow-y: scroll;
   padding-left: 1rem;
   padding-right: 1rem;
