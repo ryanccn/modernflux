@@ -1,8 +1,8 @@
-input[type='search'],
-input[type='url'],
-input[type='password'],
-input[type='text'],
-input[type='number'],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
 textarea {
   padding: 0.35rem 0.5rem;
   border-radius: 0.35rem;
@@ -30,9 +30,13 @@ label {
     margin-bottom: 1rem;
   }
 
-  & input[type='checkbox'] {
+  & input[type="checkbox"] {
     margin-bottom: 0;
   }
+}
+
+.form-section {
+  border-left-color: $surface0;
 }
 
 .button {
