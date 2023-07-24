@@ -1,8 +1,15 @@
 .item {
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 0.35rem;
-  border: 1px solid $surface0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $surface0;
+
+  transition-property: border-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
 }
+
 .item:hover {
   border-color: $surface1;
 }
