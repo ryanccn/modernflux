@@ -70,3 +70,7 @@
   --counter-color: #{$text};
   --item-meta-focus-color: #{$surface0};
 }
+
+body {
+  color-scheme: $color-scheme;
+}
