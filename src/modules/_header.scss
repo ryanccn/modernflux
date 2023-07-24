@@ -53,6 +53,10 @@
   }
 }
 
+.header li.active a:hover {
+  color: lighten($teal, 5%);
+}
+
 .logo a:hover,
 .logo a span {
   color: $teal;
