@@ -53,6 +53,11 @@
   }
 }
 
+.logo a:hover,
+.logo a span {
+  color: $teal;
+}
+
 section.page-header,
 section.page-footer {
   margin-top: 1.5rem;
