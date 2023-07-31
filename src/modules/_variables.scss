@@ -61,6 +61,10 @@
   --entry-header-border-color: #{$teal};
   --entry-header-title-link-color: #{$text};
   --entry-content-color: #{$subtext0};
+  --entry-content-quote-color: #{$subtext1};
+  --entry-content-code-color: #{$text};
+  --entry-content-code-background: #{$surface0};
+  --entry-content-code-border-color: transparent;
   --feed-parsing-error-background-color: #{$maroon};
   --feed-parsing-error-border-color: #{$red};
   --feed-has-unread-background-color: #{$surface0};

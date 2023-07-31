@@ -20,3 +20,11 @@
 .entry header h1 a:focus {
   color: $subtext1;
 }
+
+.entry-content blockquote {
+  border-color: $text;
+}
+
+.entry-content figcaption {
+  color: $subtext1;
+}
