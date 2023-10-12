@@ -35,6 +35,11 @@ label {
   }
 }
 
+fieldset {
+  border-color: $surface0;
+  padding: 1.5rem;
+}
+
 .form-section {
   border-left-color: $surface0;
 }
