@@ -1,16 +1,23 @@
 {
   "name": "modernflux",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
   "description": "A modern look and feel for Miniflux",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "sass src/:dist/ --no-source-map --watch",
-    "build": "sass src/:dist/ --no-source-map"
-  },
   "author": "Ryan Cao",
   "license": "MIT",
+  "scripts": {
+    "generate": "tsx generate.ts",
+    "dev": "sass src/:dist/ --no-source-map --watch",
+    "build": "pnpm run generate && sass src/:dist/ --no-source-map"
+  },
   "dependencies": {
     "sass": "^1.69.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.5",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
   },
   "packageManager": "pnpm@8.9.0"
 }

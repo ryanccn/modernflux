@@ -54,12 +54,12 @@
 }
 
 .header li.active a:hover {
-  color: lighten($teal, 5%);
+  color: lighten($accent, 5%);
 }
 
 .logo a:hover,
 .logo a span {
-  color: $teal;
+  color: $accent;
 }
 
 section.page-header,

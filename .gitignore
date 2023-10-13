@@ -4,3 +4,6 @@
 # Node.js
 node_modules/
 dist/
+
+# Generated files
+/src/modernflux.*.*.scss

@@ -6,6 +6,6 @@ A modern look and feel for [Miniflux](https://miniflux.app/). Color scheme based
 
 ## Installation
 
-Copy the CSS for [Mocha](https://modernflux.ryanccn.dev/modernflux.mocha.css), [Macchiato](https://modernflux.ryanccn.dev/modernflux.macchiato.css), [Frappe](https://modernflux.ryanccn.dev/modernflux.frappe.css), or [Latte](https://modernflux.ryanccn.dev/modernflux.latte.css) and paste them in the **Custom CSS** field in settings.
+There are four flavors (latte, frappé, macchiato, and mocha) and fourteen accents (rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender). Copy the contents of `https://modernflux.ryanccn.dev/modernflux.{flavor}.{accent}.css` and paste it in the **Custom CSS** settings field.
 
 Miniflux's Content Security Policy currently doesn't allow for using `@import`s, which would certainly be more convenient :&lt;
