@@ -19,11 +19,12 @@ const accents = [
 ];
 
 const template = ({ flavor, accent }: { flavor: string; accent: string }) =>
-  `@use "catppuccin/${flavor}" as *;
+  `
+@use "catppuccin/${flavor}" as *;
 
 $accent: $${accent};
 @import "global";
-`;
+`.trimStart();
 
 for (const flavor of flavors) {
   for (const accent of accents) {

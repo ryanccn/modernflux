@@ -12,11 +12,11 @@
     "build": "pnpm run generate && sass src/:dist/ --no-source-map"
   },
   "dependencies": {
-    "sass": "^1.69.3"
+    "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/node": "^20.8.5",
-    "tsx": "^3.13.0",
+    "@types/node": "^20.9.0",
+    "tsx": "^4.1.0",
     "typescript": "^5.2.2"
   },
   "packageManager": "pnpm@8.9.0"
