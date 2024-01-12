@@ -18,13 +18,13 @@
 
 .entry header h1 a:hover,
 .entry header h1 a:focus {
-  color: $subtext1;
+  color: $fg2;
 }
 
 .entry-content blockquote {
-  border-color: $text;
+  border-color: $fg0;
 }
 
 .entry-content figcaption {
-  color: $subtext1;
+  color: $fg2;
 }

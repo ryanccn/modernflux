@@ -54,7 +54,7 @@
 }
 
 .header li.active a:hover {
-  color: lighten($accent, 5%);
+  opacity: 0.95;
 }
 
 .logo a:hover,
@@ -72,7 +72,7 @@ section.page-footer {
 
   & h1 a:hover,
   & h1 a:focus {
-    color: lighten($text, 2.5%);
+    opacity: 0.975;
   }
 
   & > ul {
@@ -101,7 +101,7 @@ section.page-footer {
       text-decoration: none;
       padding: 0.1rem 0.5rem;
       border-radius: 0.25rem;
-      background-color: $surface0;
+      background-color: $bg1;
 
       & > .icon {
         padding-bottom: 0;
@@ -121,11 +121,11 @@ section.page-footer {
 
   padding: 0.1rem 0.5rem;
   border-radius: 0.25rem;
-  background-color: transparentize($red, 0.8);
+  background-color: $danger-semi;
 
   &,
   & a {
-    color: $red;
+    color: $danger;
   }
 
   & a:first-of-type {

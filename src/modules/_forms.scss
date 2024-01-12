@@ -9,8 +9,8 @@ textarea {
 }
 
 select {
-  background-color: $surface0;
-  color: $text;
+  background-color: $bg1;
+  color: $fg0;
   padding: 0.35rem 0.5rem;
   border-radius: 0.35rem;
   border: none;
@@ -36,12 +36,12 @@ label {
 }
 
 fieldset {
-  border-color: $surface0;
+  border-color: $bg1;
   padding: 1.5rem;
 }
 
 .form-section {
-  border-left-color: $surface0;
+  border-left-color: $bg1;
 }
 
 .button {
@@ -66,11 +66,11 @@ fieldset {
   }
 
   &.button-danger {
-    color: $base;
-    background-color: $red;
+    color: $bg0;
+    background-color: $danger;
 
     &:focus {
-      outline-color: $red;
+      outline-color: $danger;
     }
   }
 }

@@ -6,4 +6,5 @@ node_modules/
 dist/
 
 # Generated files
-/src/modernflux.*.*.scss
+/src/flexoki/
+/src/catppuccin/

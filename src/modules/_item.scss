@@ -3,7 +3,7 @@
   border-radius: 0.35rem;
   border-width: 1px;
   border-style: solid;
-  border-color: $surface0;
+  border-color: $bg1;
 
   transition-property: border-color;
   transition-duration: 150ms;
@@ -11,7 +11,7 @@
 }
 
 .item:hover {
-  border-color: $surface1;
+  border-color: $bg2;
 }
 
 .item-header {
@@ -29,5 +29,5 @@
 }
 
 .item-meta-info {
-  color: $subtext1;
+  color: $fg2;
 }

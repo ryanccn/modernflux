@@ -1,0 +1,21 @@
+@use "palette";
+
+$color-scheme: dark;
+
+$tx: palette.$base-200;
+$tx-2: palette.$base-500;
+$tx-3: palette.$base-700;
+$ui-3: palette.$base-800;
+$ui-2: palette.$base-850;
+$ui: palette.$base-900;
+$bg-2: palette.$base-950;
+$bg: palette.$black;
+
+$red: palette.$red-400;
+$orange: palette.$orange-400;
+$yellow: palette.$yellow-400;
+$green: palette.$green-400;
+$cyan: palette.$cyan-400;
+$blue: palette.$blue-400;
+$purple: palette.$purple-400;
+$magenta: palette.$magenta-400;
