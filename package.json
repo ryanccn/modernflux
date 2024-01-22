@@ -12,7 +12,7 @@
     "build": "pnpm run generate && sass src/:dist/ --no-source-map"
   },
   "dependencies": {
-    "sass": "^1.69.7"
+    "sass": "^1.70.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
