@@ -15,7 +15,7 @@
     "sass": "^1.69.7"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.11.17",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
