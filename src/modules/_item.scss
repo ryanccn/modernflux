@@ -31,3 +31,16 @@
 .item-meta-info {
   color: $fg2;
 }
+
+.item-meta-icons {
+  display: flex;
+  align-items: center;
+}
+
+.parsing-error {
+  margin-top: 0.5rem;
+}
+
+.alert {
+  padding: 1rem;
+}
