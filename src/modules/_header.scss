@@ -14,22 +14,19 @@
   ul#header-menu {
     display: none;
 
-    &.js-menu-show {
-      display: flex;
-    }
-
-    @media (min-width: 600px) {
-      display: flex;
-    }
-
     list-style-type: none;
 
     flex-direction: column;
     align-items: start;
     column-gap: 0.5rem;
     row-gap: 0.75rem;
+    list-style-type: none;
 
     margin-top: 0.5rem;
+
+    &.js-menu-show {
+      display: flex;
+    }
 
     @media (min-width: 600px) {
       display: flex;
@@ -37,8 +34,6 @@
       align-items: center;
       margin-top: 0;
     }
-
-    list-style-type: none;
 
     li {
       display: flex;
@@ -89,31 +84,21 @@ section.page-footer {
     display: flex;
     flex-direction: column;
 
+    gap: 0.5rem;
+
     @media (min-width: 600px) {
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
     }
 
-    gap: 0.5rem;
-
     & > li {
       padding-right: 0;
       line-height: 100%;
     }
 
-    & > li > :is(a, button, span.confirm) {
-      &.confirm {
-        display: block;
-        background-color: var(--modernflux-danger-semi);
-
-        button {
-          color: var(--modernflux-danger);
-          text-decoration: underline;
-          text-underline-offset: 2.5px;
-        }
-      }
-
+    & > li > :is(a, button, span.confirm),
+    & > li > form > :is(a, button, span.confirm) {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -125,6 +110,17 @@ section.page-footer {
       padding: 0.5rem 0.75rem;
       border-radius: 0.25rem;
       background-color: $bg1;
+
+      &.confirm {
+        display: block;
+        background-color: $danger-semi;
+
+        button {
+          color: $danger;
+          text-decoration: underline;
+          text-underline-offset: 2.5px;
+        }
+      }
 
       & > .icon {
         padding-bottom: 0;
