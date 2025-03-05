@@ -1,16 +1,11 @@
-$color-scheme: var(--modernflux-color-scheme);
+@use "modules/variables";
 
-$fg0: var(--modernflux-fg0);
-$fg1: var(--modernflux-fg1);
-$fg2: var(--modernflux-fg2);
+@use "modules/page";
+@use "modules/fixes";
+@use "modules/header";
 
-$bg0: var(--modernflux-bg0);
-$bg1: var(--modernflux-bg1);
-$bg2: var(--modernflux-bg2);
-
-$accent: var(--modernflux-accent);
-$success: var(--modernflux-success);
-$danger: var(--modernflux-danger);
-$danger-semi: var(--modernflux-danger-semi);
-
-@import "global";
+@use "modules/links";
+@use "modules/item";
+@use "modules/entry";
+@use "modules/forms";
+@use "modules/tables";

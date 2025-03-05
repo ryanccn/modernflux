@@ -12,12 +12,18 @@
     "build": "pnpm run generate && sass src/:dist/ --no-source-map"
   },
   "dependencies": {
-    "sass": "^1.77.8"
+    "sass": "^1.85.1"
   },
   "devDependencies": {
-    "@types/node": "^22.4.0",
-    "tsx": "^4.17.0",
-    "typescript": "^5.5.4"
+    "@types/node": "^22.13.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   },
-  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }

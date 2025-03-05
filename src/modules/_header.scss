@@ -1,3 +1,5 @@
+@use "../colors";
+
 .header nav {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +66,7 @@
 
 .logo a:hover,
 .logo a span {
-  color: $accent;
+  color: colors.$accent;
 }
 
 section.page-header,
@@ -75,12 +77,12 @@ section.page-footer {
   flex-direction: column;
   gap: 0.875rem;
 
-  & h1 a:hover,
-  & h1 a:focus {
+  h1 a:hover,
+  h1 a:focus {
     opacity: 0.975;
   }
 
-  & > nav > ul {
+  ul {
     display: flex;
     flex-direction: column;
 
@@ -92,38 +94,38 @@ section.page-footer {
       flex-wrap: wrap;
     }
 
-    & > li {
+    > li {
       padding-right: 0;
       line-height: 100%;
-    }
 
-    & > li > :is(a, button, span.confirm),
-    & > li > form > :is(a, button, span.confirm) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.25rem;
+      > :is(a, button, span.confirm),
+      > form > :is(a, button, span.confirm) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.25rem;
 
-      font-size: 0.9rem;
+        font-size: 0.9rem;
 
-      text-decoration: none;
-      padding: 0.5rem 0.75rem;
-      border-radius: 0.25rem;
-      background-color: $bg1;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.35rem;
+        background-color: colors.$bg1;
 
-      &.confirm {
-        display: block;
-        background-color: $danger-semi;
+        &.confirm {
+          display: block;
+          background-color: color-mix(in srgb, colors.$danger 20%, transparent);
 
-        button {
-          color: $danger;
-          text-decoration: underline;
-          text-underline-offset: 2.5px;
+          button {
+            color: colors.$danger;
+            text-decoration: underline;
+            text-underline-offset: 2.5px;
+          }
         }
-      }
 
-      & > .icon {
-        padding-bottom: 0;
+        > .icon {
+          padding-bottom: 0;
+        }
       }
     }
   }
@@ -139,15 +141,15 @@ section.page-footer {
   align-items: center;
 
   padding: 0.1rem 0.5rem;
-  border-radius: 0.25rem;
-  background-color: $danger-semi;
+  border-radius: 0.35rem;
+  background-color: color-mix(in srgb, colors.$danger 20%, transparent);
 
-  &,
-  & a {
-    color: $danger;
-  }
+  color: colors.$danger;
 
-  & a:first-of-type {
-    margin-left: 0.25rem;
+  a {
+    color: colors.$danger;
+    &:first-of-type {
+      margin-left: 0.25rem;
+    }
   }
 }

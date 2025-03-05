@@ -1,6 +1,8 @@
 # Modernflux
 
-A **modern look and feel** for [Miniflux](https://miniflux.app/), with beautiful color schemes based on [Catppuccin](https://catppuccin.ryanccn.dev/) and [Flexoki](https://stephango.com/flexoki).
+**Last updated: March 5, 2025**
+
+A modern look and feel for [Miniflux](https://miniflux.app/), with beautiful color schemes based on [Catppuccin](https://catppuccin.ryanccn.dev/) and [Flexoki](https://stephango.com/flexoki).
 
 ![Demo](/.github/demo.png)
 

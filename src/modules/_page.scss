@@ -1,10 +1,12 @@
+@use "../colors";
+
 html {
-  accent-color: $accent;
-  scrollbar-color: $bg1 $bg0;
+  accent-color: colors.$accent;
+  scrollbar-color: colors.$bg1 colors.$bg0;
 }
 
 body {
-  color-scheme: $color-scheme;
+  color-scheme: colors.$color-scheme;
   overflow-y: scroll;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -19,6 +21,6 @@ main {
 }
 
 ::selection {
-  background-color: $accent;
-  color: $bg0;
+  background-color: colors.$accent;
+  color: colors.$bg0;
 }

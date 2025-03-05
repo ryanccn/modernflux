@@ -40,7 +40,6 @@ const ctpTemplate = ({ flavor, accent }: { flavor: string; accent: string }) =>
   --modernflux-accent: #{ctp.$${accent}};
   --modernflux-success: #{ctp.$green};
   --modernflux-danger: #{ctp.$red};
-  --modernflux-danger-semi: #{transparentize(ctp.$red, 0.8)};
 }
 `.trimStart();
 
@@ -62,7 +61,6 @@ const flexokiTemplate = ({ variant, accent }: { variant: string; accent: string 
   --modernflux-accent: #{flexoki.$${accent}};
   --modernflux-success: #{flexoki.$green};
   --modernflux-danger: #{flexoki.$red};
-  --modernflux-danger-semi: #{transparentize(flexoki.$red, 0.8)};
 }
 `.trimStart();
 
