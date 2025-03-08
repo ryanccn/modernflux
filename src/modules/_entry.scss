@@ -3,8 +3,9 @@
 .entry-meta {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  column-gap: 0.5rem;
+  gap: 0.5rem;
 
   > span {
     display: flex;
@@ -42,7 +43,8 @@
 .entry-actions > ul {
   display: flex;
   flex-direction: row;
-  column-gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   align-items: center;
 
   > li {

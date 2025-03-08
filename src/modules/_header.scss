@@ -10,6 +10,7 @@
 
   @media (min-width: 600px) {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -33,6 +34,7 @@
     @media (min-width: 600px) {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       margin-top: 0;
     }
@@ -146,6 +148,7 @@ section.page-footer {
 
   color: colors.$danger;
 
+  button,
   a {
     color: colors.$danger;
     &:first-of-type {
