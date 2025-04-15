@@ -1,29 +1,31 @@
 {
   "name": "modernflux",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
   "description": "A modern look and feel for Miniflux",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
   "author": "Ryan Cao",
   "license": "AGPL-3.0-or-later",
   "scripts": {
-    "generate": "tsx generate.ts",
-    "dev": "sass src/:dist/ --no-source-map --watch",
-    "build": "pnpm run generate && sass src/:dist/ --no-source-map"
+    "build": "node build.ts"
   },
   "dependencies": {
-    "sass": "^1.85.1"
+    "sass": "^1.86.3"
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "@types/node": "^22.14.1",
+    "lightningcss": "^1.29.3",
+    "picocolors": "^1.1.1",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.11.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
-      "esbuild"
+      "esbuild",
+      "sharp",
+      "workerd"
     ]
   },
-  "packageManager": "pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3"
+  "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677"
 }

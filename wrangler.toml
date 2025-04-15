@@ -1,0 +1,7 @@
+name = "modernflux"
+compatibility_date = "2025-04-15"
+send_metrics = false
+
+[assets]
+directory = "dist"
+not_found_handling = "none"

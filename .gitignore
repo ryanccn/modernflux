@@ -1,10 +1,5 @@
-# macOS
 .DS_Store
 
-# Node.js
 node_modules/
 dist/
-
-# Generated files
-/src/flexoki/
-/src/catppuccin/
+.wrangler/
