@@ -5,3 +5,7 @@ send_metrics = false
 [assets]
 directory = "dist"
 not_found_handling = "none"
+
+[vars]
+NODE_VERSION = "23.11.0"
+PNPM_VERSION = "10.8.1"
