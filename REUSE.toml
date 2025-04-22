@@ -1,0 +1,13 @@
+version = 1
+
+[[annotations]]
+path = [
+  "public/*",
+  ".node-version",
+  "package.json",
+  "pnpm-lock.yaml",
+  ".prettierrc",
+  ".github/demo.png",
+]
+SPDX-FileCopyrightText = "2025 Ryan Cao <hello@ryanccn.dev>"
+SPDX-License-Identifier = "AGPL-3.0-or-later"

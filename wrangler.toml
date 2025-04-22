@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Ryan Cao <hello@ryanccn.dev>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 name = "modernflux"
 compatibility_date = "2025-04-15"
 send_metrics = false
@@ -5,7 +9,3 @@ send_metrics = false
 [assets]
 directory = "dist"
 not_found_handling = "none"
-
-[vars]
-NODE_VERSION = "23.11.0"
-PNPM_VERSION = "10.8.1"

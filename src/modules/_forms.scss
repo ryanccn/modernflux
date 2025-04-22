@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Ryan Cao <hello@ryanccn.dev>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
 @use "../colors";
 
 input[type="search"],
@@ -66,6 +72,11 @@ fieldset {
 
 .form-section {
   border-left-color: colors.$bg1;
+}
+
+#form-custom-css,
+#form-custom-js {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 .button {
