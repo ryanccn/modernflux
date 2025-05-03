@@ -4,12 +4,16 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-a {
-  text-underline-offset: 2px;
-
+a,
+.page-button,
+.page-link {
   transition-property: color;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
+}
+
+a {
+  text-underline-offset: 2.5px;
 
   &:has(svg) {
     display: flex;

@@ -7,7 +7,7 @@ import { transform } from "lightningcss";
 import pc from "picocolors";
 
 import { cp, mkdir, rm, writeFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
+import { join } from "node:path";
 
 await rm("dist", { recursive: true, force: true });
 await mkdir("dist");

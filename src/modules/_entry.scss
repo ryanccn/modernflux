@@ -57,8 +57,8 @@
     display: contents;
     margin-right: 0;
 
-    > button,
-    > a {
+    button,
+    a {
       display: flex;
       flex-direction: row;
       column-gap: 0.25rem;
@@ -76,11 +76,11 @@
   }
 
   blockquote {
-    border-color: colors.$fg2;
+    border-color: colors.$fg1;
     border-width: 2.5px;
   }
 
   figcaption {
-    color: colors.$fg2;
+    color: colors.$fg1;
   }
 }
