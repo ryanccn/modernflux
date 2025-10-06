@@ -14,7 +14,7 @@
     "sass": "^1.93.2"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
+    "@types/node": "^24.7.0",
     "picocolors": "^1.1.1",
     "typescript": "^5.8.3",
     "wrangler": "^4.37.0"
