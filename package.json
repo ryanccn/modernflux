@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/node": "^22.15.30",
     "picocolors": "^1.1.1",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.3",
     "wrangler": "^4.37.0"
   },
   "pnpm": {
