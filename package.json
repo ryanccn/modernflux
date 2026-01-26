@@ -10,7 +10,7 @@
     "build": "node build.ts"
   },
   "dependencies": {
-    "lightningcss": "^1.30.2",
+    "lightningcss": "^1.31.1",
     "sass": "^1.97.2"
   },
   "devDependencies": {
