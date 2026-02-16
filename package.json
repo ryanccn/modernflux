@@ -17,7 +17,7 @@
     "@types/node": "^22.15.30",
     "picocolors": "^1.1.1",
     "typescript": "^5.8.3",
-    "wrangler": "^4.63.0"
+    "wrangler": "^4.65.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
