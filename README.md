@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Modernflux
 
-**Last updated: April 22, 2025**
+**Last updated: September 11, 2026**
 
 A modern look and feel for [Miniflux](https://miniflux.app/), with beautiful color schemes based on [Catppuccin](https://catppuccin.ryanccn.dev/) and [Flexoki](https://stephango.com/flexoki).
 

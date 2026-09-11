@@ -108,8 +108,8 @@ const writeFileWithLog = async (path: string, data: string | Uint8Array) => {
       path
         .replace(/^dist\//, "")
         .padEnd(45)
-        .replace(/\.css(?=\b)/, pc.dim(".css"))
-    )} ${sizeFormat.format(byteLength)}`
+        .replace(/\.css(?=\b)/, pc.dim(".css")),
+    )} ${sizeFormat.format(byteLength)}`,
   );
 };
 

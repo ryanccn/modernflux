@@ -18,7 +18,8 @@
     "noImplicitOverride": true,
     "module": "preserve",
     "noEmit": true,
-    "lib": ["es2024"]
+    "lib": ["es2024"],
+    "types": ["node"]
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "**/node_modules/*"]
