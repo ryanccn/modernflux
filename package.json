@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "lightningcss": "^1.32.0",
-    "sass": "^1.104.1"
+    "sass": "^1.105.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.30",
     "picocolors": "^1.1.1",
     "typescript": "^5.8.3",
-    "wrangler": "^4.135.0"
+    "wrangler": "^4.141.0"
   },
   "devEngines": {
     "runtime": {
