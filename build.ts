@@ -41,43 +41,95 @@ const constants = {
 
 const ctpTemplate = ({ variant, accent }: { variant: string; accent: string }) =>
   `
-@use "themes/catppuccin/${variant}" as ctp;
+@use "themes/catppuccin/${variant}" as theme;
 
 :root {
-  --modernflux-color-scheme: #{ctp.$color-scheme};
+  --modernflux-fg0: #{theme.$text};
+  --modernflux-fg1: #{theme.$subtext0};
+  --modernflux-fg2: #{theme.$subtext1};
 
-  --modernflux-fg0: #{ctp.$text};
-  --modernflux-fg1: #{ctp.$subtext0};
-  --modernflux-fg2: #{ctp.$subtext1};
+  --modernflux-bg0: #{theme.$base};
+  --modernflux-bg1: #{theme.$surface0};
+  --modernflux-bg2: #{theme.$surface1};
 
-  --modernflux-bg0: #{ctp.$base};
-  --modernflux-bg1: #{ctp.$surface0};
-  --modernflux-bg2: #{ctp.$surface1};
+  --modernflux-accent: #{theme.$${accent}};
+  --modernflux-success: #{theme.$green};
+  --modernflux-danger: #{theme.$red};
+}
+`.trimStart();
 
-  --modernflux-accent: #{ctp.$${accent}};
-  --modernflux-success: #{ctp.$green};
-  --modernflux-danger: #{ctp.$red};
+const ctpLightDarkTemplate = ({
+  variantLight,
+  variantDark,
+  accent,
+}: {
+  variantLight: string;
+  variantDark: string;
+  accent: string;
+}) =>
+  `
+@use "themes/catppuccin/${variantLight}" as theme-light;
+@use "themes/catppuccin/${variantDark}" as theme-dark;
+
+:root {
+  --modernflux-fg0: light-dark(#{theme-light.$text}, #{theme-dark.$text});
+  --modernflux-fg1: light-dark(#{theme-light.$subtext0}, #{theme-dark.$subtext0});
+  --modernflux-fg2: light-dark(#{theme-light.$subtext1}, #{theme-dark.$subtext1});
+
+  --modernflux-bg0: light-dark(#{theme-light.$base}, #{theme-dark.$base});
+  --modernflux-bg1: light-dark(#{theme-light.$surface0}, #{theme-dark.$surface0});
+  --modernflux-bg2: light-dark(#{theme-light.$surface1}, #{theme-dark.$surface1});
+
+  --modernflux-accent: light-dark(#{theme-light.$${accent}}, #{theme-dark.$${accent}});
+  --modernflux-success: light-dark(#{theme-light.$green}, #{theme-dark.$green});
+  --modernflux-danger: light-dark(#{theme-light.$red}, #{theme-dark.$red});
 }
 `.trimStart();
 
 const flexokiTemplate = ({ variant, accent }: { variant: string; accent: string }) =>
   `
-@use "themes/flexoki/${variant}" as flexoki;
+@use "themes/flexoki/${variant}" as theme;
 
 :root {
-  --modernflux-color-scheme: #{flexoki.$color-scheme};
+  --modernflux-fg0: #{theme.$tx};
+  --modernflux-fg1: #{theme.$tx-2};
+  --modernflux-fg2: #{theme.$tx-3};
 
-  --modernflux-fg0: #{flexoki.$tx};
-  --modernflux-fg1: #{flexoki.$tx-2};
-  --modernflux-fg2: #{flexoki.$tx-3};
+  --modernflux-bg0: #{theme.$bg};
+  --modernflux-bg1: #{theme.$bg-2};
+  --modernflux-bg2: #{theme.$ui};
 
-  --modernflux-bg0: #{flexoki.$bg};
-  --modernflux-bg1: #{flexoki.$bg-2};
-  --modernflux-bg2: #{flexoki.$ui};
+  --modernflux-accent: #{theme.$${accent}};
+  --modernflux-success: #{theme.$green};
+  --modernflux-danger: #{theme.$red};
+}
+`.trimStart();
 
-  --modernflux-accent: #{flexoki.$${accent}};
-  --modernflux-success: #{flexoki.$green};
-  --modernflux-danger: #{flexoki.$red};
+const flexokiLightDarkTemplate = ({
+  variantLight,
+  variantDark,
+  accent,
+}: {
+  variantLight: string;
+  variantDark: string;
+  accent: string;
+}) =>
+  `
+@use "themes/flexoki/${variantLight}" as theme-light;
+@use "themes/flexoki/${variantDark}" as theme-dark;
+
+:root {
+  --modernflux-fg0: light-dark(#{theme-light.$tx}, #{theme-dark.$tx});
+  --modernflux-fg1: light-dark(#{theme-light.$tx-2}, #{theme-dark.$tx-2});
+  --modernflux-fg2: light-dark(#{theme-light.$tx-3}, #{theme-dark.$tx-3});
+
+  --modernflux-bg0: light-dark(#{theme-light.$bg}, #{theme-dark.$bg});
+  --modernflux-bg1: light-dark(#{theme-light.$bg-2}, #{theme-dark.$bg-2});
+  --modernflux-bg2: light-dark(#{theme-light.$ui}, #{theme-dark.$ui});
+
+  --modernflux-accent: light-dark(#{theme-light.$${accent}}, #{theme-dark.$${accent}});
+  --modernflux-success: light-dark(#{theme-light.$green}, #{theme-dark.$green});
+  --modernflux-danger: light-dark(#{theme-light.$red}, #{theme-dark.$red});
 }
 `.trimStart();
 
@@ -131,6 +183,20 @@ for (const variant of constants.catppuccin.variants) {
   }
 }
 
+for (const variantDark of constants.catppuccin.variants.filter((v) => v !== "latte")) {
+  for (const accent of constants.catppuccin.accents) {
+    const dest = join("dist", "catppuccin", `system-${variantDark}`);
+    await mkdir(dest, { recursive: true });
+
+    const { css } = sassCompiler.compileString(ctpLightDarkTemplate({ variantLight: "latte", variantDark, accent }), {
+      loadPaths: ["src"],
+    });
+
+    await writeFileWithLog(join(dest, `${accent}.css`), css);
+    await writeFileWithLog(join(dest, `${accent}.min.css`), minify(css));
+  }
+}
+
 for (const variant of constants.flexoki.variants) {
   for (const accent of constants.flexoki.accents) {
     const dest = join("dist", "flexoki", variant);
@@ -143,6 +209,21 @@ for (const variant of constants.flexoki.variants) {
     await writeFileWithLog(join(dest, `${accent}.css`), css);
     await writeFileWithLog(join(dest, `${accent}.min.css`), minify(css));
   }
+}
+
+for (const accent of constants.flexoki.accents) {
+  const dest = join("dist", "flexoki", `system`);
+  await mkdir(dest, { recursive: true });
+
+  const { css } = sassCompiler.compileString(
+    flexokiLightDarkTemplate({ variantLight: "light", variantDark: "dark", accent }),
+    {
+      loadPaths: ["src"],
+    },
+  );
+
+  await writeFileWithLog(join(dest, `${accent}.css`), css);
+  await writeFileWithLog(join(dest, `${accent}.min.css`), minify(css));
 }
 
 await cp("public", "dist", { recursive: true });

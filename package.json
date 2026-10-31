@@ -11,23 +11,23 @@
   },
   "dependencies": {
     "lightningcss": "^1.32.0",
-    "sass": "^1.106.1"
+    "sass": "^1.107.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
+    "@types/node": "^26.6.6",
     "picocolors": "^1.1.1",
-    "typescript": "^5.8.3",
-    "wrangler": "^4.152.0"
+    "typescript": "^7.0.2",
+    "wrangler": "^4.156.0"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "^26.0.0",
+      "version": "^26.13.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.4.1+sha512.2e81e399d73fe8390dab25e06aa788ab7a5908248d2f5a370f82b481147a6a7a367bf8048f9a6fdb6460f21a66f0542dedb8b94ca2c8723596741920b1656d4c",
+      "version": "12.17.0+sha512.b8d223ebec04b580a89ed206daa71d1bccb6a1ee1d52efa95cc3b0db75271561df8f0d8e2c43add39c5ec08018af7a8a95108e7090f95a29f88727b7a40fd53d",
       "onFail": "download"
     }
   }

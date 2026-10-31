@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Modernflux
 
-**Last updated: September 11, 2026**
+**Last updated: October 31, 2026**
 
 A modern look and feel for [Miniflux](https://miniflux.app/), with beautiful color schemes based on [Catppuccin](https://catppuccin.ryanccn.dev/) and [Flexoki](https://stephango.com/flexoki).
 
@@ -16,10 +16,12 @@ A modern look and feel for [Miniflux](https://miniflux.app/), with beautiful col
 
 Currently, Modernflux has two color schemes available: Catppuccin and Flexoki. Each has different choices of variant and accent color:
 
-| Color scheme | Variants                                | Accent colors                                                                                                                        |
-| ------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Catppuccin   | `latte`, `frappe`, `macchiato`, `mocha` | `rosewater`, `flamingo`, `pink`, `mauve`, `red`, `maroon`, `peach`, `yellow`, `green`, `teal`, `sky`, `sapphire`, `blue`, `lavender` |
-| Flexoki      | `light`, `dark`                         | `red`, `orange`, `yellow`, `green`, `cyan`, `blue`, `purple`, `magenta`                                                              |
+| Color scheme | Variants                                                                                     | Accent colors                                                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Catppuccin   | `latte`, `frappe`, `macchiato`, `mocha`, `system-frappe`, `system-macchiato`, `system-mocha` | `rosewater`, `flamingo`, `pink`, `mauve`, `red`, `maroon`, `peach`, `yellow`, `green`, `teal`, `sky`, `sapphire`, `blue`, `lavender` |
+| Flexoki      | `light`, `dark`, `system`                                                                    | `red`, `orange`, `yellow`, `green`, `cyan`, `blue`, `purple`, `magenta`                                                              |
+
+`system*` themes adapt to whichever color scheme is selected in Miniflux's "Theme" application setting. If you want Modernflux to adapt to the system color scheme, set Miniflux's theme to "System - Sans Serif" or "System - Serif".
 
 ### CSS `@import`
 
